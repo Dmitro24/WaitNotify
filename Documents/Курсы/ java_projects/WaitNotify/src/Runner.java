@@ -20,18 +20,13 @@ public class Runner {
             e.printStackTrace();
         }
 
-        synchronized (blocked) {
-            blocked.setI(blocked.getI() + 2);
-            System.out.print("to ");
-            blocked.setLocker(false);
-            blocked.notify();
-        }
+
             Thread.sleep(1);
 
 
         synchronized (blocked) {
             blocked.setI(blocked.getI() + 3);
-            System.out.print("ua.");
+            System.out.print("repository");
             /*try {
                 blocked.wait(500);
             } catch (InterruptedException e) {
