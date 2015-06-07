@@ -21,7 +21,7 @@ public class Runner {
         }
 
 
-            Thread.sleep(1);
+            Thread.sleep(2);
 
 
         synchronized (blocked) {
